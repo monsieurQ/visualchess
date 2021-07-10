@@ -149,10 +149,10 @@
 	background-color: #b2b9b2;
 }
 .move_black{
-	background-color:var(--blackOnBlack);
+	background-color:var(--black_overlay);
 }
 .move_white{
-	background-color: var(--whiteOnWhite);
+	background-color: var(--white_overlay);
 }
 
 .move_white.selected{

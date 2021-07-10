@@ -1,7 +1,7 @@
 import React from 'react'; 
 import './GamesList.css';
 
-const GamesList = ({games, close_popup}) => {
+const GamesList = ({games, closePopup}) => {
 
 	let whiteplayer = /\[White\s"?(.*?)"?\]/; 
 	let blackplayer = /\[Black\s"?(.*?)"?\]/; 
@@ -13,7 +13,7 @@ const GamesList = ({games, close_popup}) => {
 			{ games && 	 
 				games.map((i, c) => {
 					return (
-						<div key={c+'game'} onClick={() => close_popup(i)} className="game">
+						<div key={c+'game'} onClick={() => closePopup(i)} className="game">
 							<div className="players">
 								{i.match(whiteplayer)[1] + " vs. " + i.match(blackplayer)[1] + " ("+i.match(result)[1]+")"} 
 							</div>
