@@ -1,0 +1,51 @@
+:root{
+	--pgn_button_black: url('./../../img/pgn_button_black.png');
+  	--pgn_button_white: url('./../../img/pgn_button_white.png');
+
+  	--play_button_black: url('./../../img/play_button_black.png');
+  	--play_button_white: url('./../../img/play_button_white.png');
+
+	--pieces_button_hide: url('./../../img/pieces_button_hide.png');
+	--pieces_button_show: url('./../../img/pieces_button_show.png');
+
+	--pause_button_black: url('./../../img/pause_button_black.png');
+	--pause_button_white: url('./../../img/pause_button_white.png');
+
+	--control_button_on: url('./../../img/control_button_on.png');
+	--control_button_off: url('./../../img/control_button_off.png');
+}
+
+.img_button{
+	background-size: cover;
+	background-color:white;
+	/*border:1px solid black;*/
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	width:var(--button-height);
+	cursor: pointer;
+	height:var(--button-height);
+	transition: background-color 0.1s;
+}
+.img_button:hover{
+	background-color: black;
+	/*border:1px solid white;*/
+	
+}
+
+.pgn_button{ background-image: var(--pgn_button_black); }
+.pgn_button:hover{ background-image: var(--pgn_button_white); }
+
+.play_button.off{ background-image: var(--play_button_black); }
+.play_button.off:hover{ background-image: var(--play_button_white); }
+.play_button.on{ background-image: var(--pause_button_black); }
+.play_button.on:hover{ background-image: var(--pause_button_white); }
+
+
+.pieces_button.on{ background-image: var(--pieces_button_hide); }
+.pieces_button.off{ background-image: var(--pieces_button_show); }
+
+/*.pause_button_black{ background-image: var(--pause_button_black); }
+.pause_button_white{ background-image: var(--pause_button_white); }*/
+
+.control_button_on{ background-image: var(--control_button_on); }
+.control_button_off{ background-image: var(--control_button_off); }

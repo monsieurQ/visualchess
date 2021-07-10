@@ -1,0 +1,34 @@
+
+
+.inputclass{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.inputclass > .inputbox{
+	flex: 1;
+	text-align: center;
+}
+
+
+.inputclass > .inputbox > textarea{
+	width:100%;
+	box-sizing: border-box;
+	padding:20px;
+	resize:vertical;
+}
+
+.inputclass > .inputbox > input{
+	width:80%;
+	padding:10px 20px;
+}
+
+.inputclass > .inputsubmit{
+	flex-basis: 10%;
+	margin-left: 2em;
+}
+
+
+.collapsed{
+}

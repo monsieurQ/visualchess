@@ -1,0 +1,33 @@
+:root{
+	--next-move: url('./../../../img/next-move.png');
+	--prev-move: url('./../../../img/prev-move.png');
+	--first-move: url('./../../../img/first-move.png');
+	--last-move: url('./../../../img/last-move.png');
+}
+
+button{
+	background-size: 15%;
+	background-repeat: no-repeat;
+	background-color:#edebe9;
+	border:none;
+	background-position: 50% 50%;
+	padding:0;
+	cursor:pointer;
+	margin:0;
+	transition: background-color 0.1s;
+}
+button:hover{
+	background-color: #dbd7d1;
+}
+
+.next_move{
+	background-image: var(--next-move);
+}
+.prev_move{
+	background-image: var(--prev-move);
+}
+.first_move{
+	background-image: var(--first-move);}
+.last_move{
+	background-image: var(--last-move);
+}

@@ -1,0 +1,19 @@
+.button{
+	cursor: pointer;
+	font-weight: bold;
+ 	/*border: 1px solid black;*/
+ 	box-shadow:var(--shadow);
+	padding: 0 5px;
+	line-height: var(--button-height);
+	color:black;
+	cursor:pointer;
+	background-color: white;
+	transition: background-color 0.1s, color 0.1s;
+}
+.button:hover{
+	background-color:black;
+  	color:white;
+  	background-size: cover;
+	background-color:black;
+	transition: background-color 0.1s;
+}

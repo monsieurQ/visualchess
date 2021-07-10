@@ -1,0 +1,297 @@
+
+:root{
+	--move_height: 20px;
+}
+@media (hover: none) {
+	:root{
+		--move_height: 30px;
+	}
+}
+
+
+#moves{
+	max-height: 100%;
+	display:flex;
+	flex-flow: column nowrap;
+}
+
+
+#moves > #moves_container{
+	display:flex;
+	flex-flow: column nowrap;
+	/*flex-grow: 1;*/
+	max-height: 100%;
+}
+
+#moves #top_row{
+	font-weight: bolder;
+	padding: 11px 23px 11px 0;
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	box-sizing: border-box;
+	box-shadow:var(--shadow);
+	font-size: 1em;
+}
+
+
+
+#moves #top_row div.left{
+	margin-left: 19px;
+}
+
+#moves #top_row div.right{
+	display: flex;
+	align-items: center;
+}
+
+#moves #top_row span.color{
+	width:18px;
+	display:inline-block;
+	height:18px;
+	border:1px inset gray;
+	border-radius:15px;
+	margin-right: 10px;
+}
+
+#moves #top_row span.w{
+	background-color:white;
+}
+#moves #top_row span.b{
+	background-color:black;
+}
+
+#moves #table_container{
+	background-color: white;
+	box-shadow:var(--shadow);
+	overflow: hidden;
+}
+
+.move_button_container{
+	height: var(--button-height);
+	display:flex;
+	background-color:#edebe9;
+	flex-flow: row nowrap;
+	position: relative; /* Needed for the box shadow to show up over sibling */
+	border:1px ridge lightgray;
+	box-sizing: border-box;
+	box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+	overflow-y:overlay;
+}
+.move_button_container > *{
+	flex: 0 0 25%;
+}
+.move_button_container button{
+	border-right:1px ridge lightgray;
+	background-size: auto 50%;	
+
+}
+.move_button_container button:last-child{
+	border-right: none;
+}
+
+
+#table_container #moves_table{
+	overflow-y: auto;
+	background-color: white;
+	max-height:425px;
+	box-sizing: border-box;
+}
+
+#moves_table > .move_item{
+	display:grid;
+	grid-template-columns: 14% 43% 43%;
+	height: var(--move_height);
+}
+
+#moves #moves_table > *{
+	box-sizing: border-box;
+}
+
+.move_number{
+	display: flex;
+    background-color: #edebe9;
+    text-align: center;
+    height: var(--move_height);
+    font-size: small;
+    border:1px ridge lightgray;
+    border-top:none;
+    justify-content: center;
+    align-items: center;
+    padding-left:2px;
+    box-sizing: border-box;
+}
+.move_white:hover, .move_black:hover{
+	text-decoration: underline; 
+}
+.move_white:hover{
+	background-color: #b2b9b2;
+}
+.move_black:hover{
+	background-color: #af8a84;
+}		
+
+.move_black, .move_white{
+	text-align: center;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size:small;
+	cursor:pointer;
+	color:black;
+	text-decoration: none;
+	max-height: var(--move_height);
+	line-height: var(--move_height);
+	border-bottom:1px ridge rgba(237,237,237,0.2);
+}
+.move_black:hover, .move_white:hover{
+	background-color: #b2b9b2;
+}
+.move_black{
+	background-color:var(--blackOnBlack);
+}
+.move_white{
+	background-color: var(--whiteOnWhite);
+}
+
+.move_white.selected{
+	border:1px solid yellow;
+	background-color: #b2b9b2;
+}
+.move_black.selected{
+	border:1px solid yellow;
+	background-color: #af8a84;
+}
+
+#moves #top_row{
+	font-weight: bolder;
+	padding: 11px 23px 11px 0;
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	box-sizing: border-box;
+	box-shadow:var(--shadow);
+	font-size: 1em;
+}
+
+
+aside #moves{
+	order: 1;
+}
+
+aside .cards{
+	order: 2;
+}
+
+aside .cards .players{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:  space-between;
+	align-items: baseline;
+	font-size: 0.8rem;
+	font-weight: bold;
+	background-color: white;
+	padding: 0.6em 1em 0.6em 1em;
+	box-shadow:var(--shadow);
+	
+}
+
+aside .cards .players > * {
+	box-sizing: border-box;
+}
+
+aside .cards .players > .whiteplayer{
+	flex: 1 0 57%;
+}
+aside .cards .players > .blackplayer{
+	text-align: end;
+	flex: 1 0 43%;
+}
+
+aside .cards .result{
+	background-color: white;
+	font-size: 0.8rem;
+	padding: 0.2em 1em 0.2em 1em;
+	box-shadow:var(--shadow);
+	display: flex;
+	align-items: center;
+}
+
+aside .button_container{
+	order: 3;
+	display:flex;
+	flex-flow:row wrap;
+	box-sizing: border-box;
+	/*gap: 5px;*/
+}
+aside .button_container > *{
+	margin-bottom:5px;
+	margin-right: 5px;
+}
+
+
+@media only screen and (orientation:landscape){
+	#moves{
+		max-width:330px;
+	}
+	#table_container #moves_table{
+		max-height:calc((100vh - 100px)*0.4);
+		height:350px;
+	}
+	aside .cards{
+		max-width:330px;
+	}
+	aside .button_container{
+		margin-top: 5px;
+	}	
+}
+
+
+@media only screen and (orientation:portrait){
+	#moves{
+		margin-left:19px;
+		max-width: 100%;
+	}
+
+	#moves #top_row{
+		font-size:0.9em;
+		padding:5px 23px 5px 0;
+		height:30px;
+		margin-bottom:0;
+	}
+
+	#table_container #moves_table{
+		/* Full height - title height - chessboard height - gap (margin) - MovesTitle height - movebuttons height*/
+		max-height: unset;
+		height: calc(100vh - 85px - 96vw - 25px - 30px - var(--button-height));
+	}	
+
+	aside #moves{
+		grid-area: 1 / 1 / 4 / 1;
+	}
+
+	aside .cards{
+		grid-area: 2 / 2 / 3 / 3;
+	}
+
+	aside .button_container{
+		display:flex;
+		margin-top: 0;
+		flex-flow:row wrap;
+		grid-area: 1 / 2 / 2 / 3;
+		align-content: baseline;
+		margin-left: 5px;
+	}
+}
+
+@media only screen and (orientation:portrait) and (max-height: 600px){
+
+	#table_container #moves_table{
+		/* Full height - title height - chessboard height - gap (margin) - MovesTitle height - movebuttons height*/
+		max-height: unset;
+		height: calc(100vh - 35px - 96vw - 25px - 30px - var(--button-height));
+	}	
+}
