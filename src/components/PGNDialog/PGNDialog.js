@@ -56,7 +56,7 @@ class PGNDialog extends Component{
 	}
 
 	loadStudy = () => {
-		fetch('http://localhost:3001/game?all=true')
+		fetch('https://morning-reef-63921.herokuapp.com/game?all=true')
 	      	.then(res => res.json())
 	     	.then(res => {
 	        	this.setState({games: res});
