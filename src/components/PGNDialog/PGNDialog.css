@@ -29,6 +29,9 @@
 	margin-left: 2em;
 }
 
+.loading_container{
+	background-image: url(/spinner.gif);
+}
 
 .collapsed{
 }
