@@ -42,8 +42,8 @@ class PGNDialog extends Component{
 					</div>
 				</div>
 
-				<h1> Famous Games { this.state.loading ? <div class="loading_container" /> : '' } </h1>  
-				
+				<h1> Famous Games  </h1>  
+				{ this.state.loading ? <div class="loading_container" /> : '' }
 				<GamesList games={this.state.games} closePopup={this.state.closePopup} />
 			</>
 		);
@@ -61,7 +61,7 @@ class PGNDialog extends Component{
 		fetch('https://morning-reef-63921.herokuapp.com/game?all=true')
 	      	.then(res => res.json())
 	     	.then(res => {
-	        	this.setState({loading:false, games: res});
+	        	this.setState({ loading: false, games: res});
         	});
 	}
 

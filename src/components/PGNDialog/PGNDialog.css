@@ -30,7 +30,10 @@
 }
 
 .loading_container{
-	background-image: url(/spinner.gif);
+	background-image: url('./../../img/spinner.gif');
+	height: 30px;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .collapsed{
