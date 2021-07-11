@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/visualchess/static/css/main.004ad8e0.chunk.css",
-    "main.js": "/visualchess/static/js/main.46eb7315.chunk.js",
-    "main.js.map": "/visualchess/static/js/main.46eb7315.chunk.js.map",
+    "main.css": "/visualchess/static/css/main.f97a0e01.chunk.css",
+    "main.js": "/visualchess/static/js/main.c514fef9.chunk.js",
+    "main.js.map": "/visualchess/static/js/main.c514fef9.chunk.js.map",
     "runtime-main.js": "/visualchess/static/js/runtime-main.afdcabc9.js",
     "runtime-main.js.map": "/visualchess/static/js/runtime-main.afdcabc9.js.map",
     "static/js/2.494a6082.chunk.js": "/visualchess/static/js/2.494a6082.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.4af6039a.chunk.js": "/visualchess/static/js/3.4af6039a.chunk.js",
     "static/js/3.4af6039a.chunk.js.map": "/visualchess/static/js/3.4af6039a.chunk.js.map",
     "index.html": "/visualchess/index.html",
-    "static/css/main.004ad8e0.chunk.css.map": "/visualchess/static/css/main.004ad8e0.chunk.css.map",
+    "static/css/main.f97a0e01.chunk.css.map": "/visualchess/static/css/main.f97a0e01.chunk.css.map",
     "static/js/2.494a6082.chunk.js.LICENSE.txt": "/visualchess/static/js/2.494a6082.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.afdcabc9.js",
     "static/js/2.494a6082.chunk.js",
-    "static/css/main.004ad8e0.chunk.css",
-    "static/js/main.46eb7315.chunk.js"
+    "static/css/main.f97a0e01.chunk.css",
+    "static/js/main.c514fef9.chunk.js"
   ]
 }
